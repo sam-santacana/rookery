@@ -1,0 +1,87 @@
+baseurl         = "http://rookerytest.cf"
+theme           = "casper2"
+languageCode    = "en-US"
+disqusShortname = ""
+paginate        = 6
+#SectionPagesMenu = "main"
+canonifyurls    = true
+[deployment]
+
+order = [".jpg$", ".gif$"]
+
+
+[[deployment.targets]]
+# An arbitrary name for this target.
+name = "test"
+URL = "s3://rookerytest.cf?region=us-east-1"
+# S3; see https://gocloud.dev/howto/blob/#s3
+# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+# URL = "s3://<Bucket Name>?region=<AWS region>"
+[[deployment.matchers]]
+pattern = "^.+\\.(js|css|svg|ttf)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(png|jpg)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = false
+
+[[deployment.matchers]]
+pattern = "^.+\\.(html|xml|json)$"
+gzip = true
+[params]
+  title       = "The Rookery"
+  subtitle    = "School Without Walls Rookery"
+  copyright   = "© 2020"
+
+  cover       = "img/blog.jpg"
+  description = "Here is a description of your site."
+  metaDescription = ""
+  googleAnalytics = ""
+  customCSS = []
+  RSSLink = ""
+
+  twitterName = "test"
+  instagramName = "test"
+
+  logo = "school-without-walls-logo.png"
+  orgName = "test"
+  orgWebsite = "https://swwhs.org"
+  orgDescription = "School Without Walls HS Washington DC"
+
+  showSupport = true
+
+  
+  authorAvatar = "school-without-walls-logo.png"
+  authorLocation = "Washington, DC"
+
+
+  pageNotFoundTitle = "404 - Page not found"
+
+  #1/2
+  singleViewStyle = "casper"
+
+[permalinks]
+  post = "/post/:slug/"
+
+[[menu.main]]
+  name = "Home"
+  url = "/post"
+  weight = 200
+
+[[menu.main]]
+  name = "Articles"
+  url = "/tags/articles/"
+  weight = 100
+
+[[menu.main]]
+  name = "Games&Puzzles"
+  url = "/tags/games+puzzles/"
+  weight = 99
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 95
+

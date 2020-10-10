@@ -1,0 +1,33 @@
+<footer class="site-footer outer">
+  <div class="site-footer-content inner">
+    <section class="copyright" style="line-height: 1.3em;">
+     
+      {{with .Site.Params.showSupport}}
+        <a> <span id="datetime">
+           <script>
+               var dt = new Date();
+               var day = ["1st","2nd","3rd","4th","5th","6th","7th", "8th", "9th","10th","11th","12th","13th","14th","15th","16th","17th","18th","19th","20th","21st","22nd","23rd","24th","25th","26th","27th","28th","29th","30th","31st"];
+               var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+               document.getElementById("datetime").innerHTML = (( months[dt.getMonth()] + " " + day[dt.getDate()-1] + ", " + dt.getFullYear()));
+               </script>
+        </span></a>
+   
+        <a><span id="demo">
+          <script>
+          var d = new Date();
+           document.getElementById("demo").innerHTML = (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+           </script></span></a>
+
+       {{end}}
+    </section>
+    <nav class="site-footer-nav">
+     
+        <a href="/">{{.Site.Params.orgName}}</a> {{.Site.Params.copyright}} <br>
+        {{with .Site.Params.showSupport}}{{end}}
+        <a href="https://www.instagram.com/test" target="_blank">Instagram</a>
+      
+        {{with .Site.Params.twitterName}}<a href="https://twitter.com/{{.}}" target="_blank" rel="noopener">Twitter</a>{{end}}
+
+    </nav>  
+  </div>
+</footer>

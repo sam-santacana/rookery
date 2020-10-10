@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://rookerytest.cf/</loc>
+    <lastmod>2019-11-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rookerytest.cf/post/example-2/</loc>
+    <lastmod>2019-11-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rookerytest.cf/tags/games&#43;puzzles/</loc>
+    <lastmod>2019-11-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rookerytest.cf/post/</loc>
+    <lastmod>2019-11-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rookerytest.cf/tags/</loc>
+    <lastmod>2019-11-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rookerytest.cf/tags/articles/</loc>
+    <lastmod>2001-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rookerytest.cf/post/getting-started/</loc>
+    <lastmod>2001-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rookerytest.cf/post/test-4/</loc>
+    <lastmod>1989-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rookerytest.cf/tags/testytest/</loc>
+    <lastmod>1989-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rookerytest.cf/post/test-3/</loc>
+    <lastmod>1903-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rookerytest.cf/categories/</loc>
+  </url>
+  
+</urlset>
