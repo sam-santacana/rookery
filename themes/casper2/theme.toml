@@ -1,0 +1,5 @@
+name = "Casper Two"
+license = "MIT"
+licenselink = "https://github.com/eueung/hugo-casper-two/blob/master/LICENSE.md"
+description = "Port of Casper 2.x from Ghost Foundation"
+min_version=0.31
